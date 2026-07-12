@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dromi Issue Tracker
+    url: https://github.com/dromilang/Dromi/issues
+    about: Se riscontri problemi con Dromi usa l'issue tracker di Dromi.
