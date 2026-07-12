@@ -48,7 +48,7 @@ Ogni segnalazione ci aiuta a rendere Dromi migliore! 💚
 Oppure puoi discurre nelle Discussions:
 
 1. Assicurati di avere un account GitHub
-2. Vai alla pagina [Discussions](https://github.com/dromilang/WDromi/discussions)
+2. Vai alla pagina [Discussions](https://github.com/dromilang/Dromi/discussions)
 3. Inizia a discurre!
 
 Anche una dissussione migliora Dromi! 💚
