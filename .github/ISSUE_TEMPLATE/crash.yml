@@ -1,0 +1,70 @@
+name: Crash Report
+description: Segnala un crash di WDromi
+title: "[Crash] "
+labels:
+  - crash
+
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versione WDromi
+      description: Indica la versione utilizzata.
+      placeholder: "dromi-v1.1/wdromi.js"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del crash
+      description: Spiega cosa stavi facendo quando WDromi si è bloccato.
+      placeholder: "WDromi si chiude/blocca quando..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Codice che causa il crash
+      description: Inserisci il codice Dromi, Python o JavaScript coinvolto.
+      render: javascript
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Errore completo
+      description: Copia l'errore della console del browser.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passaggi per riprodurre
+      description: Inserisci i passaggi necessari per causare il crash.
+      placeholder: |
+        1. Importo WDromi
+        2. Eseguo il codice
+        3. WDromi va in crash
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: "Chrome / Firefox / Edge"
+
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operativo
+      placeholder: "Windows 11 / Linux / macOS"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Informazioni aggiuntive
+      description: Log, screenshot o altri dettagli utili.
