@@ -1,0 +1,58 @@
+name: Feature Request
+description: Proponi una nuova funzionalità per WDromi
+title: "[Feature] "
+labels:
+  - enhancement
+
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Funzionalità richiesta
+      description: Descrivi la funzionalità che vorresti aggiungere.
+      placeholder: "Vorrei che WDromi supportasse..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Motivo della richiesta
+      description: Perché questa funzionalità sarebbe utile?
+      placeholder: "Questa funzionalità servirebbe per..."
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Possibile soluzione
+      description: Se hai un'idea su come implementarla, descrivila.
+      placeholder: "Si potrebbe aggiungere..."
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Esempio di utilizzo
+      description: Mostra come dovrebbe essere usata la nuova funzionalità.
+      placeholder: |
+        import { nuovaFunzione } from "wdromi";
+
+        nuovaFunzione();
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoria
+      description: A quale parte di WDromi riguarda?
+      options:
+        - Esecuzione Python
+        - API JavaScript
+        - Compatibilità Dromi
+        - Output e DOM
+        - Documentazione
+        - Altro
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Informazioni aggiuntive
+      description: Altri dettagli, idee o riferimenti.
