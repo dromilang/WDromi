@@ -1,0 +1,61 @@
+name: Bug Report
+description: Segnala un bug in WDromi
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versione WDromi
+      description: Indica la versione che stai usando.
+      placeholder: "dromi-v1.1/wdromi.js"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del bug
+      description: Spiega cosa non funziona.
+      placeholder: "Quando eseguo questo codice succede..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Passaggi per riprodurre
+      description: Come si può vedere il problema?
+      placeholder: |
+        1. Importo WDromi
+        2. Eseguo runDromi()
+        3. Ottengo questo errore
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Codice utilizzato
+      description: Inserisci il codice che causa il problema.
+      render: javascript
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Errore visualizzato
+      description: Copia eventuali errori della console.
+      render: shell
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: "Chrome 140 / Firefox 145 / Edge"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Informazioni aggiuntive
+      description: Altri dettagli utili.
