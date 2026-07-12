@@ -9,7 +9,7 @@ Questo documento spiega come puoi aiutarci a migliorare il progetto in modo chia
 
 Se trovi un bug o un comportamento strano in Dromi:
 
-1. Controlla se il problema è già stato segnalato nella sezione [Issues](https://github.com/DeMENIGECO/Dromi/issues).  
+1. Controlla se il problema è già stato segnalato nella sezione [Issues](https://github.com/dromilang/Dromi/issues).  
 2. Se non esiste, apri un nuovo **Issue** descrivendo usando il nostro template di Bug.  
    - Cosa stavi facendo  
    - Cosa ti aspettavi  
