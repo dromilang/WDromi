@@ -26,3 +26,13 @@ WDromi supporta le seguenti versioni di Dromi:
 ## Licenza
 
 WDromi è distribuito con la stessa licenza di Dromi.
+
+---
+
+## Documentazione
+
+WDromi ha un'immensa documentazione. Puoi:
+
+- Scoprire [come usarlo](https://dromilang.github.io/dromi-web/use)
+- Vedere le [versioni](https://dromilang.github.io/dromi-web/support) supportate
+- E [altro](https://dromilang.github.io/dromi-web/)!
