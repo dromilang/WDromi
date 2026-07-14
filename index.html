@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WDromi Documentation</title>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+
+:root {
+    --accent: #5cd05c;
+    --bg: #ffffff;
+    --text: #222;
+    --card: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+/* Header */
+
+header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* Layout */
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 260px;
+    padding: 25px;
+    border-right: 1px solid #ddd;
+    min-height: calc(100vh - 64px);
+}
+
+.sidebar h3 {
+    color: var(--accent);
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    margin: 12px 0;
+}
+
+.sidebar a:hover {
+    color: var(--accent);
+}
+
+
+/* Content */
+
+.content {
+    padding: 40px;
+    max-width: 900px;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+    color: var(--accent);
+}
+
+
+code {
+    background: #eee;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+
+pre {
+    background: #111;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+
+blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 15px;
+    color: #555;
+}
+
+
+/* Mobile */
+
+@media(max-width:800px){
+
+.sidebar {
+    display:none;
+}
+
+.content {
+    padding:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+    <div class="logo">
+        WDromi Docs
+    </div>
+</header>
+
+
+<div class="container">
+
+
+<aside class="sidebar">
+
+<h3>Documentazione</h3>
+
+<a href="#">Home</a>
+<a href="README.md">README</a>
+
+</aside>
+
+
+<main class="content">
+
+<div id="docs">
+    Caricamento documentazione...
+</div>
+
+</main>
+
+
+</div>
+
+
+
+<script>
+
+fetch("README.md")
+.then(response => response.text())
+.then(markdown => {
+
+    document.getElementById("docs").innerHTML =
+        marked.parse(markdown);
+
+})
+.catch(() => {
+
+    document.getElementById("docs").innerHTML =
+    `
+    <h1>Errore</h1>
+    <p>Impossibile caricare README.md</p>
+    `;
+
+});
+
+</script>
+
+
+</body>
+</html>
